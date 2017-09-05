@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="fonts/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body ng-controller='controller'>
+    <div class="wrap">
+        <header class="header">
+        <ul>
+            <li>未使用</li>
+            <li>已使用</li>
+            <li>已过期</li>
+        </ul>
+        </header>
+        <div class="content">
+
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/zepto.min.js'></script>
+<script type='text/javascript' src='js/angular.min.js'></script>
+<script type='text/javascript' src='js/angular-ui-router.js'></script>
+<script>
+    var html = document.documentElement;
+    html.style.fontSize = html.clientWidth/316*100+"px";
+    var app=angular.module('app',['ui.router']);
+        app.controller('controller',['$scope',function($scope){
+
+        }])
+        /*app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+            $urlRouterProvider.otherwise('home')
+            $stateProvider.state('home',{
+                url:'/home',
+                templateUrl:'template/home.html'
+            })
+        }])*/
+</script>
+</html>
